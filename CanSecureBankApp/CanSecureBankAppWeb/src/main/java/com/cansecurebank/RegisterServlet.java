@@ -13,7 +13,8 @@ import com.bank.ejb.model.Account;
 @WebServlet("/register")
 public class RegisterServlet extends HttpServlet {
 
-    @EJB
+    private static final long serialVersionUID = 1L;
+	@EJB
     private AccountServiceRemote accountService;
 
     @Override
